@@ -9,7 +9,7 @@ struct man{
            int math;
            int physics;
            int it;
-           double sred;
+           int sred;
 };
 bool cmp(man a,man b){
     return a.sred>b.sred;
@@ -22,7 +22,7 @@ int main()
     vector <man> g(n);
     for (int i=0;i<n;i++){
         cin >> g[i].name1 >> g[i].name2 >>  g[i].math >> g[i].physics >> g[i].it;
-        g[i].sred=(g[i].math+g[i].physics+g[i].it)/3;
+        g[i].sred=g[i].math+g[i].physics+g[i].it;
     }
 
     stable_sort(g.begin(),g.end(),cmp);
