@@ -9,7 +9,7 @@ struct man{
            int math;
            int physics;
            int it;
-           int sred;
+           double sred;
 };
 bool cmp(man a,man b){
     return a.sred>b.sred;
