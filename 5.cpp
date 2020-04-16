@@ -14,7 +14,9 @@ int main()
     }
     for (long long i=0;i<10000000;i++){
         summ+=a[i];
-        if(summ>summmax){summmax=summ;}
+        if(summ>summmax){
+            summmax=summ;
+        }
     }
     cout << summmax;
     return 0;
