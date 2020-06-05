@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-int point=0,c=0,check=0,count=-1;
+int point=0,check=0,count=-1;
 string d;
 cin >> d;
 for (int i=0; i<d.length(); i++){
