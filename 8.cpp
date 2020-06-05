@@ -25,12 +25,12 @@ if (check==0){
     else {
         if( count >= 0 && count<=255){
                 count=-1;
+                point++;
         }
         else{
                 d=-1;
                 break;
         }
-            point++;
     }
 
 }
