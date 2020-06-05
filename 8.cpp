@@ -5,21 +5,21 @@ using namespace std;
 int main()
 {
 int point=0,check=0,count=-1;
-string d;
-cin >> d;
-for (int i=0; i<d.length(); i++){
-     if(d[i]!='.' && d[i]!='0' && d[i]!='1' && d[i]!='2' && d[i]!='3' && d[i]!='4' && d[i]!='5' && d[i]!='6' && d[i]!='7' && d[i]!='8' && d[i]!='9'){
+string str;
+cin >> str;
+for (int i=0; i<str.length(); i++){
+     if(str[i]!='.' && str[i]!='0' && str[i]!='1' && str[i]!='2' && str[i]!='3' && str[i]!='4' && str[i]!='5' && str[i]!='6' && str[i]!='7' && str[i]!='8' && str[i]!='9'){
         check=-1;
      }
 }
 if (check==0){
-    for(int i = 0;i<d.length();i++){
-    if (d[i]!='.'){
+    for(int i = 0;i<str.length();i++){
+    if (str[i]!='.'){
         if(count==-1){
-                count=d[i]-48;
+                count=str[i]-48;
             }
         else{
-            count=count*10+d[i]-48;
+            count=count*10+str[i]-48;
         }
     }
     else {
@@ -28,14 +28,14 @@ if (check==0){
                 point++;
         }
         else{
-                d=-1;
+                check=-1;
                 break;
         }
     }
 
 }
 
-if(count>=0 && count<=255 && point== 3){
+if(point== 3 && count>=0 && count<=255){
         cout << "true";
     }
     else{
